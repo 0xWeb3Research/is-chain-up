@@ -1,122 +1,481 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-gas-nature-ecology-those-icons-lineal-color-those-icons.png"
-      type="image/x-icon"
-    />
+        <!--=============== FAVICON ===============-->
+        <link
+            rel="shortcut icon"
+            href="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-gas-nature-ecology-those-icons-lineal-color-those-icons.png"
+            type="image/x-icon"
+        />
 
-    <!--=============== BOXICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
+        <!--=============== BOXICONS ===============-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+        />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href='{% static "/css/index.css" %}' />
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href='{% static "/css/index.css" %}' />
 
-    <title>gaspay</title>
-  </head>
-  <body>
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">
-          <img
-            src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-gas-nature-ecology-those-icons-lineal-color-those-icons.png"
-            alt=""
-            class="nav__logo-img"
-          />
-          Gas-pay
+        <title>gaspay</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img
+                        src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/000000/external-gas-nature-ecology-those-icons-lineal-color-those-icons.png"
+                        alt=""
+                        class="nav__logo-img"
+                    />
+                    Gas-pay
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/" class="nav__link active-link"
+                                >Refresh</a
+                            >
+                        </li>
+
+                        <a href="#" class="button button--ghost">Donate</a>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== TRICK OR TREAT ====================-->
+            <section class="section trick" id="trick">
+                <h4 class="section__title">Get All layer fees ♥</h4>
+
+                <div class="trick__container container grid">
+                    <div class="trick__content">
+                        <img
+                            src="{{ethmainnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{ethmainnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{ethmainnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{ethmainnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img src="{{ethkovan_logo}}" alt="" class="home__img" />
+                        <h3 class="trick__title">{{ethkovan}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{ethkovan_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{ethkovan_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{maticmainnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{maticmainnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{maticmainnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{maticmainnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{maticmumbai_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{maticmumbai}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{maticmumbai_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{maticmumbai_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{avalanchemainnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{avalanchemainnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{avalanchemainnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{avalanchemainnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{avalanchetestnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{avalanchetestnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{avalanchetestnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{avalanchetestnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{bscmainnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{bscmainnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{bscmainnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{bscmainnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{bsctestnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{bsctestnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{bsctestnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{bsctestnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{moonbeammoonbasealpha_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{moonbeammoonbasealpha}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{moonbeammoonbasealpha_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{moonbeammoonbasealpha_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{moonbeammoonriver_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{moonbeammoonriver}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{moonbeammoonriver_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{moonbeammoonriver_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{rskmainnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{rskmainnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{rskmainnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{rskmainnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{rsktestnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{rsktestnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{rsktestnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{rsktestnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{arbitrummainnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{arbitrummainnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{arbitrummainnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{arbitrummainnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{arbitrumtestnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{arbitrumtestnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{arbitrumtestnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{arbitrumtestnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{fantommainnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{fantommainnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{fantommainnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{fantommainnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{fantomtestnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{fantomtestnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{fantomtestnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{fantomtestnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{palmmainnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{palmmainnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{palmmainnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{palmmainnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{palmtestnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{palmtestnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{palmtestnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{palmtestnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{klaytnmainnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{klaytnmainnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{klaytnmainnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{klaytnmainnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{hecomainnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{hecomainnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{hecomainnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{hecomainnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{hecotestnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{hecotestnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{hecotestnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{hecotestnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{nervospolyjuicetestnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{nervospolyjuicetestnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{nervospolyjuicetestnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{nervospolyjuicetestnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{axiemainnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{axiemainnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{axiemainnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{axiemainnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{evmostestnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{evmostestnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{evmostestnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{evmostestnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{astarshiden_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{astarshiden}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{astarshiden_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{astarshiden_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{iotexmainnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{iotexmainnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{iotexmainnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{iotexmainnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{iotextestnet_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">{{iotextestnet}}</h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{iotextestnet_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{iotextestnet_status}}</span
+                        >
+                    </div>
+                    <div class="trick__content">
+                        <img
+                            src="{{covalentinternalnetworkv1_logo}}"
+                            alt=""
+                            class="home__img"
+                        />
+                        <h3 class="trick__title">
+                            {{covalentinternalnetworkv1}}
+                        </h3>
+                        <span class="trick__subtitle"
+                            >Chain ID: {{covalentinternalnetworkv1_id}}</span
+                        >
+                        <span class="trick__price"
+                            >STATUS : {{covalentinternalnetworkv1_status}}</span
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="bx bx-up-arrow-alt scrollup__icon"></i>
         </a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="/" class="nav__link active-link">Refresh</a>
-            </li>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
 
-            <a href="#" class="button button--ghost">Donate</a>
-          </ul>
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
-          <div class="nav__close" id="nav-close">
-            <i class="bx bx-x"></i>
-          </div>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-grid-alt"></i>
-        </div>
-      </nav>
-    </header>
-
-    <main class="main">
-      <!--==================== TRICK OR TREAT ====================-->
-      <section class="section trick" id="trick">
-        <h4 class="section__title">Get All layer fees ♥ </h4>
-
-        <div class="trick__container container grid">
-          <div class="trick__content">
-            <img src={{ethmainnet_logo}} alt="" class="home__img">
-            <h3 class="trick__title">{{ethmainnet}}</h3>
-            <span class="trick__subtitle">Chain ID: {{ethmainnet_id}}</span>
-            <span class="trick__price">STATUS : {{ethmainnet_status}}</span>
-          </div>
-
-          <div class="trick__content">
-            <h3 class="trick__title">Layer 1 -Layer 1</h3>
-            <span class="trick__subtitle">Normal: </span>
-            <span class="trick__price">${{normal}}</span>
-          </div>
-
-          <div class="trick__content">
-            <h3 class="trick__title">Layer 1 -Layer 1</h3>
-            <span class="trick__subtitle">Fast: </span>
-            <span class="trick__price">${{fast}}</span>
-          </div>
-
-          <div class="trick__content">
-            <h3 class="trick__title">Layer 1 -Layer 1</h3>
-            <span class="trick__subtitle">Instant</span>
-            <span class="trick__price">${{instant}}</span>
-          </div>
-
-          <div class="trick__content">
-            <h3 class="trick__title">Layer 2 -Layer 2</h3>
-            <span class="trick__subtitle">ETH</span>
-            <span class="trick__price">${{l2l2p}}</span>
-          </div>
-
-          <div class="trick__content">
-            <h3 class="trick__title">Layer 1 -Layer 2</h3>
-            <span class="trick__subtitle">ETH</span>
-            <span class="trick__price">${{l1l2p}}</span>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
-    </a>
-
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
-
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="{% static '/js/index.js' %}" type="text/javascript"></script>
-  </body>
+        <!--=============== MAIN JS ===============-->
+        <script
+            src="{% static '/js/index.js' %}"
+            type="text/javascript"
+        ></script>
+    </body>
 </html>
