@@ -117,7 +117,9 @@ def home(request):
 
     payload = {
         "ethmainnet" : ethmainnet,
-
+        "ethmainnet_id":ethmainnet_id, 
+        "ethmainnet_logo": ethmainnet_logo,
+        "ethmainnet_status": ethmainnet_status
     }
 
     return render(request, 'home.html', payload)
@@ -139,6 +141,7 @@ def home(request):
     #       ['arbitrum-testnet', '421611', 'https://www.covalenthq.com/static/images/icons/display-icons/arbitrum-mainnet-logo.svg', True],
     #        ['fantom-mainnet', '250', 'https://www.covalenthq.com/static/images/icons/display-icons/fantom-ftm-logo.png', True],
     #         ['fantom-testnet', '4002', 'https://www.covalenthq.com/static/images/icons/display-icons/fantom-ftm-logo.png', True], 
+    
     #         ['palm-mainnet', '11297108109', 'https://www.covalenthq.com/static/images/icons/display-icons/palm-mainnet-logo.svg', True],
     #          ['palm-testnet', '11297108099', 'https://www.covalenthq.com/static/images/icons/display-icons/palm-mainnet-logo.svg', True],
     #           ['klaytn-mainnet', '8217', 'https://www.covalenthq.com/static/images/icons/display-icons/klaytn-mainnet-logo.svg', True],
