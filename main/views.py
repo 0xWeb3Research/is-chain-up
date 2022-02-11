@@ -7,7 +7,7 @@ from django.shortcuts import render
 def getData():
     data_array = []
 
-    url = "https://api.covalenthq.com/v1/chains/status/?quote-currency=USD&format=JSON&key=ckey_docs"
+    url = "https://api.covalenthq.com/v1/chains/status/?quote-currency=USD&format=JSON&key=ckey_ea92a653795e49708b942c87153"
     x = requests.get(url)
     res = json.loads(x.text)
     data = res["data"]["items"]
