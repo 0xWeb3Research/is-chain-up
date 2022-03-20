@@ -123,34 +123,30 @@ def home(request):
     hecotestnet_id= alldata[20][1]
     hecotestnet_logo = alldata[20][2]
     hecotestnet_status = alldata[20][3]
-    nervospolyjuicetestnet = alldata[21][0]
-    nervospolyjuicetestnet_id= alldata[21][1]
-    nervospolyjuicetestnet_logo = alldata[21][2]
-    nervospolyjuicetestnet_status = alldata[21][3]
-    axiemainnet = alldata[22][0]
-    axiemainnet_id= alldata[22][1]
-    axiemainnet_logo = alldata[22][2]
-    axiemainnet_status = alldata[22][3]
-    evmostestnet = alldata[23][0]
-    evmostestnet_id= alldata[23][1]
-    evmostestnet_logo = alldata[23][2]
-    evmostestnet_status = alldata[23][3]
-    astarshiden = alldata[24][0]
-    astarshiden_id= alldata[24][1]
-    astarshiden_logo = alldata[24][2]
-    astarshiden_status = alldata[24][3]
-    iotexmainnet = alldata[25][0]
-    iotexmainnet_id= alldata[25][1]
-    iotexmainnet_logo = alldata[25][2]
-    iotexmainnet_status = alldata[25][3]
-    iotextestnet = alldata[26][0]
-    iotextestnet_id= alldata[26][1]
-    iotextestnet_logo = alldata[26][2]
-    iotextestnet_status = alldata[26][3]
-    covalentinternalnetworkv1 = alldata[27][0]
-    covalentinternalnetworkv1_id= alldata[27][1]
-    covalentinternalnetworkv1_logo = alldata[27][2]
-    covalentinternalnetworkv1_status = alldata[27][3]
+    axiemainnet = alldata[21][0]
+    axiemainnet_id= alldata[21][1]
+    axiemainnet_logo = alldata[21][2]
+    axiemainnet_status = alldata[21][3]
+    evmostestnet = alldata[22][0]
+    evmostestnet_id= alldata[22][1]
+    evmostestnet_logo = alldata[22][2]
+    evmostestnet_status = alldata[22][3]
+    astarshiden = alldata[23][0]
+    astarshiden_id= alldata[23][1]
+    astarshiden_logo = alldata[23][2]
+    astarshiden_status = alldata[23][3]
+    iotexmainnet = alldata[24][0]
+    iotexmainnet_id= alldata[24][1]
+    iotexmainnet_logo = alldata[24][2]
+    iotexmainnet_status = alldata[24][3]
+    iotextestnet = alldata[25][0]
+    iotextestnet_id= alldata[25][1]
+    iotextestnet_logo = alldata[25][2]
+    iotextestnet_status = alldata[25][3]
+    covalentinternalnetworkv1 = alldata[26][0]
+    covalentinternalnetworkv1_id= alldata[26][1]
+    covalentinternalnetworkv1_logo = alldata[26][2]
+    covalentinternalnetworkv1_status = alldata[26][3]
 
     payload = {
    "ethmainnet" : ethmainnet,
@@ -237,10 +233,6 @@ def home(request):
     "hecotestnet_id" : hecotestnet_id,
     "hecotestnet_logo" : hecotestnet_logo,
     "hecotestnet_status" : hecotestnet_status,
-    "nervospolyjuicetestnet" : nervospolyjuicetestnet,
-    "nervospolyjuicetestnet_id" : nervospolyjuicetestnet_id,
-    "nervospolyjuicetestnet_logo" : nervospolyjuicetestnet_logo,
-    "nervospolyjuicetestnet_status" : nervospolyjuicetestnet_status,
     "axiemainnet" : axiemainnet,
     "axiemainnet_id" : axiemainnet_id,
     "axiemainnet_logo" : axiemainnet_logo,
